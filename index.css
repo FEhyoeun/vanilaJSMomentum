@@ -1,10 +1,24 @@
 :root {
     /* color */
     --color-white: #ffffff;
+    --color-light-gray: #a7a7a7;
     --color-dark-gray: #2c3e50;
     /* space */
-    --space-general: ;
+    --space-general: 2rem;
+    --space-wide: 5rem;
+    --space-narrow: 1rem;
+    /* size */
+    --font-general: 1.25rem;
+    --font-emphasis: 3rem;
+    --font-clock: 4rem;
+    /* shadow */
+    --shadow-general: 0.3rem 0.3rem var(--color-light-gray);
+    --shadow-narrow: 0.2rem 0.2rem var(--color-light-gray);
+}
 
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -42,3 +56,43 @@ li {
     z-index: -1;
     animation: fadeIn 0.5s linear;
 }
+
+.js-clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--space-wide);
+    font-size: var(--font-clock);
+    text-shadow: var(--shadow-general);
+}
+
+.js-greetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--space-general);
+    font-size: var(--font-emphasis);
+    text-shadow: var(--shadow-narrow);
+}
+
+.js-toDoForm,
+.js-toDoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--space-general);
+}
+
+.js-toDoInput { 
+    width: 30rem;
+    height: var(--space-general);
+    border: none;
+    font-size: var(--font-general);
+    resize: none;
+}
+
+.js-toDoList {
+    font-size: var(--font-general);
+    text-shadow: var(--shadow-narrow);
+}
+
