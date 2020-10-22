@@ -60,6 +60,7 @@ li {
 .js-clock {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: var(--space-wide);
     font-size: var(--font-clock);
@@ -88,6 +89,7 @@ li {
     height: var(--space-general);
     border: none;
     font-size: var(--font-general);
+    color: var(--color-dark-gray);
     resize: none;
 }
 
