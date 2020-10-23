@@ -30,7 +30,9 @@ function paintToDo(text) {
 
     delBtn.innerHTML = "❌";
     delBtn.style.border = "0";
-    delBtn.style.outline = "0";
+    delBtn.style.backgroundColor = "rgba( 255, 255, 255, 0)";
+    delBtn.style.cursor = "pointer";
+    delBtn.style.margin = "0.6rem 0.2rem";
     delBtn.addEventListener("click", delteToDo);
     span.innerText = text;
     li.appendChild(delBtn);

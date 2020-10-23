@@ -12,8 +12,9 @@
     --font-emphasis: 3rem;
     --font-clock: 4rem;
     /* shadow */
-    --shadow-general: 0.3rem 0.3rem var(--color-light-gray);
-    --shadow-narrow: 0.2rem 0.2rem var(--color-light-gray);
+    --shadow-emphasis: 0.3rem 0.3rem var(--color-light-gray);
+    --shadow-general: 0.2rem 0.2rem var(--color-light-gray);
+    --shadow-narrow: 0.1rem 0.05rem var(--color-light-gray);
 }
 
 * {
@@ -64,7 +65,14 @@ li {
     align-items: center;
     margin-top: var(--space-wide);
     font-size: var(--font-clock);
-    text-shadow: var(--shadow-general);
+    text-shadow: var(--shadow-emphasis);
+}
+
+.js-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .js-greetings {
@@ -73,7 +81,7 @@ li {
     align-items: center;
     margin-top: var(--space-general);
     font-size: var(--font-emphasis);
-    text-shadow: var(--shadow-narrow);
+    text-shadow: var(--shadow-general);
 }
 
 .js-toDoForm,
@@ -87,6 +95,15 @@ li {
 .js-toDoInput { 
     width: 30rem;
     height: var(--space-general);
+    border: none;
+    font-size: var(--font-general);
+    color: var(--color-dark-gray);
+    resize: none;
+}
+
+.js-formInput {
+    height: var(--space-general);
+    margin-top: var(--space-wide);
     border: none;
     font-size: var(--font-general);
     color: var(--color-dark-gray);

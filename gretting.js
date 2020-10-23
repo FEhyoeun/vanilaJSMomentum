@@ -1,5 +1,6 @@
 let name = "";
 
+
 const form = document.querySelector(".js-form"),
     input = form.querySelector("input"),
     greeting = document.querySelector(".js-greetings");
@@ -35,6 +36,7 @@ function loadName() {
         askForName();    
     } else {
         paintGreeting(currentUser);
+        form.remove();
     }
 }
 
